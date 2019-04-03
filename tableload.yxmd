@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="3">
+  
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>datafeeddetails.xlsx
+Table=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DataFeedID" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="InternalorExternal" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ClientName" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedContent" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedType" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedDetail" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="DataCumulative" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="DataFeedDescription" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedFormat" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="WorksheetNameIfSpreadsheetFormat" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedFieldDelimiter" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedTextQualifier" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedFormatDescription" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedReceiptServerType" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedReceiptServerName" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedFolderPath" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedFileNamePrefix" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedFileNameSuffix" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedFileNameStringContents" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedFrequency" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="FeedExpectedReceiptCalendarDay" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="FeedReceiveTime" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="FeedMaxExpectedDaysforReceipt" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Active" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="EffectiveStartDateTime" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="DateTime" />
+            <Field name="EffectiveEndDateTime" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ReasonToDeactivate" size="255" source="File: C:\Users\sneha.mestry\Desktop\datafeeddetails.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="318" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=Postgrey_SQL_Connection;UID=Administrator;PWD=__EncPwd1__|||Lookup.DataFeedTablesDetails</File>
+          <Passwords>42C92AE3799CCE023BD801A7ECA2606EAB5C21479A4FED77DDB675E310152917A4F80BB5A9374743B207FDF3FE44029C3103CB7590307</Passwords>
+          <FormatSpecificOptions>
+            <Projection />
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Postgrey_SQL_Connection
+Table=Lookup.DataFeedTablesDetails</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DataFeedID" selected="True" type="Int16" size="2" />
+            <SelectField field="FeedExpectedReceiptCalendarDay" selected="True" type="Int32" size="4" />
+            <SelectField field="FeedMaxExpectedDaysforReceipt" selected="True" type="Int16" size="2" />
+            <SelectField field="EffectiveEndDateTime" selected="True" type="DateTime" size="19" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="317" y="10" width="91.40836" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>reprocess</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="342" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\sneha.mestry\Desktop\table1.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>table1.xlsx
+Table=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Datafeedid" source="File: C:\Users\sneha.mestry\Desktop\table1.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="FileReprocessFlag" source="File: C:\Users\sneha.mestry\Desktop\table1.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="FileExecutionCheckFlag" source="File: C:\Users\sneha.mestry\Desktop\table1.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="MD5ReprocessFlag" source="File: C:\Users\sneha.mestry\Desktop\table1.xlsx|||`Sheet1$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="498" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=Postgrey_SQL_Connection;UID=Administrator;PWD=__EncPwd1__|||Lookup.reprocessflag</File>
+              <Passwords>42C92AE3799CCE023BD801A7ECA2606EAB5C21479A4FED77DDB675E310152917A4F80BB5A9374743B207FDF3FE44029C3103CB7590307</Passwords>
+              <FormatSpecificOptions>
+                <Projection />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="Datafeedid" Dest="datafeedid" />
+                    <Field Source="FileReprocessFlag" Dest="filereprocessflag" />
+                    <Field Source="FileExecutionCheckFlag" Dest="fileexecutionoverrideflag" />
+                    <Field Source="MD5ReprocessFlag" Dest="md5overrideflag" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Append</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=Postgrey_SQL_Connection
+Table=Lookup.reprocessflag</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>tableload</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
