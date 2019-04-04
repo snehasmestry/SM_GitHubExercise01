@@ -4,4 +4,6 @@ commit;
 
 Rollback;
 
-JB : I am adding new row in your code, please approve it.
+Hi Sneha,
+
+I am adding new line in your code,kindly merge and approve it.
